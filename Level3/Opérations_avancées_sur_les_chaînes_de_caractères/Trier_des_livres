@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int nb;
+string l;
+vector <string> vv;
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+   cin>>nb;
+   cin.ignore();
+   for(int loop=0;loop<nb;loop++)
+   {
+      getline(cin,l);
+      vv.push_back(l);
+   }
+   sort(vv.begin(),vv.begin()+nb);
+   for(int loop=0;loop<nb;loop++)
+   {
+      cout<<vv[loop]<<endl;
+   }
+}
