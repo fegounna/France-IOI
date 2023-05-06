@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+  
+int main()
+{
+   for (char car = 'a'; car <= 'z'; car = car + 1)
+   {
+      if(!(car=='a'||car=='e'||car=='i'||car=='o'||car=='u'||car=='y'))
+      cout << car << " ";
+   }
+}
